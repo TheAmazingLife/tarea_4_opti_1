@@ -1,0 +1,5 @@
+The instances provided in the .rar file in the attachments section on this page are simply a republication of the Asymmetric TSP (ATSP) instances available in the TSP LIB (http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/).
+
+Note, the diagonal entries in the original TSP Lib files and the re-prints here are 9999; in the research documented in Srour and van de Velde (2011), the diagonal entries were changed to 1e+007. 
+
+Information on the original source of these instances may be found in the COMMENT section of the header in each file and on the TSP LIB website -- please respect the original sources and cite appropriately.

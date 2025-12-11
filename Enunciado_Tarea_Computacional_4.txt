@@ -1,0 +1,37 @@
+Tarea Computacional 4
+Fecha de entrega Viernes a las 23:59 Puntos 23 Entregando una carga de archivo Tipos de archivo pdf, py, y ipynb Disponible 4 de dic en 0:00 - 12 de dic en 23:59
+
+Objetivos:
+1 Utilizar Python junto a CPLEX y GUROBI para resolver modelos de programación lineal entera.
+2 Conocer distintas formulaciones del problema del vendedor viajero asimetrico (ATSP).
+3 Resolver instancias del ATSP de distintos tamaños.
+4 Comparar los resultados de las distintas formulaciones y solvers.
+
+Descripción:
+En grupos designados (ver “gruposTC4.pdf”), implementar las formulaciones MTZ y GG que aparecen en el artículo: Roberti, Toth. “Models and algorithms for the Asymmetric Traveling Salesman Problem: an experimental comparison”1.Implementar el modelo en Python con CPLEX y GUROBI, resolver las mismas instancias para los dos modelos, con tiempo límite de 1 hora, por solver, modelo e instancia. Cada grupo debe resolver 10 instancias del ATSP tomadas de TSPLIB2, distribuidas en tres tamaños (pequeñas: 17–50 nodos; medianas: 60–120; grandes: 200–400). Definan la distribución del tamaño de las instancias de manera que puedan realizar los análisis y conclusiones propuestos.
+
+En el informe deben incluir ambas formulaciones, indicando ventajas y desventajas de cada una de acuerdo a lo mencionado en el artículo.
+
+Incluir una tabla con los resultados obtenidos indicando por cada instancia (fila) el número de nodos; luego, por cada modelo y solver, número de variables, número de restricciones, tiempo de cómputo (en segundos), gap reportado por el solver (MIPgap, en porcentaje) y función objetivo (Best bound). Si la instancia no puede ser resuelta por el solver en el tiempo disponible, puede reportar gap 100%.
+
+Al analizar los resultados de la tabla, discuta sobre el tamaño de las formulaciones y el GAP observado (¿se confirma lo indicado en el artículo?), los tiempos de cómputo, comportamiento de los solvers, otros que consideren relevantes.
+
+En las conclusiones indiquen qué aprendieron de las diferentes formulaciones, como se reafirma la teoría indicada en el artículo con sus resultados obtenidos, qué aprendieron respecto a los solvers utilizados, qué podrían observar respecto a la escalabilidad de las instancias, qué características tenían las instancias más difíciles, que pruebas adicionales podrían realizar si tuvieran más tiempo (nuevos modelos, nuevas instancias, análisis estadísticos, etc).
+
+Se recuerda que la entrega de archivos en blanco, corresponde a NCR. No pueden ser tareas presentadas en semestres anteriores. Se puede utilizar inteligencia generativa pero, al entregar el trabajo, garantizan que han revisado y validado su contenido.
+
+Entrega: Deben subir a la plataforma Canvas dos archivos:
+-informe de máximo 4 páginas con la identificación del grupo, con la tabla, análisis y conclusiones. Formato PDF.
+-Script en Python (.py o .ipynb) con la implementación.
+
+Referencias:
+1 ATSP: https://www.sciencedirect.com/science/article/pii/S2192437620600115Links to an external site.
+2 Instancias: https://www.kaggle.com/datasets/ziya07/traveling-salesman-problem-tsplib-dataset?resource=downloadLinks to an external site.
+
+Rubrica:
+|Concepto|Puntaje|
+|Coherencia entre modelos e implementación|5|
+|Correcto uso de los solver (configuración, llamadas a funciones, clases, etc)|3|
+|Presentación de los resultados|5|
+|Análisis de resultados|5|
+|Conclusiones|5|
