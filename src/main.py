@@ -6,7 +6,7 @@ genera tabla de resultados en csv
 
 import os
 import pandas as pd
-from parser import parse_atsp_file
+from atsp_parser import parse_atsp_file
 from mtz import solve_mtz_cplex, solve_mtz_gurobi
 from gg import solve_gg_cplex, solve_gg_gurobi
 

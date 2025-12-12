@@ -4,7 +4,8 @@ script de prueba para validar implementacion con br17.atsp
 
 import sys
 sys.path.append('src')
-from main import parse_atsp_file, solve_mtz_cplex, solve_mtz_gurobi
+from atsp_parser import parse_atsp_file
+from mtz import solve_mtz_cplex, solve_mtz_gurobi
 
 # probar parser
 print("probando parser de archivos atsp...")
