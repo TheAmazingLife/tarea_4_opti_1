@@ -31,7 +31,7 @@ def main():
     ]
     
     # directorio de instancias
-    dataset_dir = './dataset/TSPLib/'
+    dataset_dir = '../dataset/TSPLib/'
     
     # lista para almacenar resultados
     results = []
